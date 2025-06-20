@@ -2,7 +2,7 @@
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Settings, Smartphone, Users, Smile, Icon as LucideIcon } from 'lucide-react';
+import { ClipboardPen, Tv2, Workflow, Icon as LucideIcon } from 'lucide-react';
 import Image from 'next/image';
 import type { LucideProps } from 'lucide-react';
 import React from 'react';
@@ -15,10 +15,9 @@ interface Step {
 }
 
 const iconComponents: { [key: string]: React.FC<LucideProps> } = {
-  Settings,
-  Smartphone,
-  Users,
-  Smile,
+  ClipboardPen,
+  Tv2,
+  Workflow,
 };
 
 
@@ -26,10 +25,9 @@ const HowItWorksSection = () => {
   const { t } = useTranslation();
 
   const steps: Step[] = [
-    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', iconName: 'Settings' },
-    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', iconName: 'Smartphone' },
-    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', iconName: 'Users' },
-    { id: 'step4', titleKey: 'howItWorks.step4.title', descriptionKey: 'howItWorks.step4.description', iconName: 'Smile' },
+    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', iconName: 'ClipboardPen' },
+    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', iconName: 'Tv2' },
+    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', iconName: 'Workflow' },
   ];
 
   return (

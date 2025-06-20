@@ -42,26 +42,21 @@
   },
   "howItWorks": {
     "title": "Pasos Sencillos Hacia la Eficiencia",
-    "subtitle": "Comprende cómo QueuePilot transforma la gestión de tus colas en unos pocos y sencillos pasos.",
+    "subtitle": "Observa cómo QueuePilot gestiona todo el recorrido del cliente, desde su llegada hasta la finalización del servicio.",
     "step1": {
-      "title": "Configura Tus Colas",
-      "description": "Configura fácilmente tus puntos de servicio y parámetros de cola en minutos.",
-      "icon": "Settings"
+      "title": "Registro Fácil y Rápido",
+      "description": "Los clientes se registran ágilmente en recepción o un quiosco de autoservicio, uniéndose instantáneamente a la cola para el servicio o profesional seleccionado.",
+      "icon": "ClipboardPen"
     },
     "step2": {
-      "title": "Clientes se Unen Virtualmente",
-      "description": "Los clientes pueden unirse a las colas de forma remota a través de la aplicación móvil o quioscos.",
-      "icon": "Smartphone"
+      "title": "Espera Informada y Cómoda",
+      "description": "Sigue el estado de la cola en tiempo real en pantallas públicas. El personal gestiona las colas eficientemente, reduciendo los tiempos de espera percibidos y reales.",
+      "icon": "Tv2"
     },
     "step3": {
-      "title": "Gestiona y Monitorea",
-      "description": "El personal gestiona eficientemente las colas y llama a los clientes con actualizaciones en tiempo real.",
-      "icon": "Users"
-    },
-    "step4": {
-      "title": "Mejora la Satisfacción",
-      "description": "Reduce los tiempos de espera percibidos y reales, lo que lleva a clientes más felices.",
-      "icon": "Smile"
+      "title": "Llamada y Atención Optimizadas",
+      "description": "Recibe notificaciones oportunas cuando sea tu turno. El personal brinda el servicio, mientras QueuePilot captura datos para mejorar continuamente las operaciones.",
+      "icon": "Workflow"
     }
   },
   "testimonials": {

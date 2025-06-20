@@ -42,26 +42,21 @@
   },
   "howItWorks": {
     "title": "Simple Steps to Efficiency",
-    "subtitle": "Understand how QueuePilot transforms your queue management in a few easy steps.",
+    "subtitle": "See how QueuePilot manages the entire customer journey from arrival to service completion.",
     "step1": {
-      "title": "Setup Your Queues",
-      "description": "Easily configure your service points and queue parameters within minutes.",
-      "icon": "Settings"
+      "title": "Easy Registration",
+      "description": "Customers register quickly at reception or a self-service kiosk, instantly joining the queue for their selected service or professional.",
+      "icon": "ClipboardPen"
     },
     "step2": {
-      "title": "Customers Join Virtually",
-      "description": "Customers can join queues remotely via mobile app or kiosks.",
-      "icon": "Smartphone"
+      "title": "Informed & Comfortable Waiting",
+      "description": "Track queue status in real-time on public displays. Staff manage queues efficiently, reducing perceived and actual wait times.",
+      "icon": "Tv2"
     },
     "step3": {
-      "title": "Manage & Monitor",
-      "description": "Staff efficiently manage queues and call customers forward with real-time updates.",
-      "icon": "Users"
-    },
-    "step4": {
-      "title": "Improve Satisfaction",
-      "description": "Reduce perceived and actual wait times, leading to happier customers.",
-      "icon": "Smile"
+      "title": "Optimized Calling & Service",
+      "description": "Receive timely notifications when it's their turn. Staff provide service, while QueuePilot captures data to continuously improve operations.",
+      "icon": "Workflow"
     }
   },
   "testimonials": {
