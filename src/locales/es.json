@@ -54,7 +54,8 @@
     "step3": {
       "title": "3. Consulta y Finalización",
       "description": "Tras la consulta, el médico marca el estado como 'Completado'. Estos datos se registran para analíticas. También se gestionan ausencias/cancelaciones."
-    }
+    },
+    "ctaButton": "Ver en Acción"
   },
   "cta": {
     "title": "¿Listo para Transformar la Experiencia de Tus Clientes?",
@@ -169,5 +170,11 @@
       "title": "9. Información de Contacto",
       "paragraph1": "Si tienes alguna pregunta sobre estos Términos o los Servicios, comunícate con QueuePilot en {{email}}."
     }
+  },
+  "demo": {
+    "title": "Demo Interactiva",
+    "subtitle": "Experimenta QueuePilot en acción.",
+    "mainAction": "Haz clic aquí o en el fondo para abrir la Pantalla Pública en una nueva pestaña.",
+    "mobileViewTitle": "Vista del Doctor (Simulación Móvil)"
   }
 }

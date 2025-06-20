@@ -54,7 +54,8 @@
     "step3": {
       "title": "3. Consultation & Completion",
       "description": "After consultation, the doctor marks the status as 'Completed'. This data is logged for analytics. No-shows/cancellations are also managed."
-    }
+    },
+    "ctaButton": "See it in Action"
   },
   "cta": {
     "title": "Ready to Transform Your Customer Experience?",
@@ -169,5 +170,11 @@
       "title": "9. Contact Information",
       "paragraph1": "If you have any questions about these Terms or the Services, please contact QueuePilot at {{email}}."
     }
+  },
+  "demo": {
+    "title": "Interactive Demo",
+    "subtitle": "Experience QueuePilot in action.",
+    "mainAction": "Click here or on the background to open the Public Display in a new tab.",
+    "mobileViewTitle": "Doctor's View (Mobile Simulation)"
   }
 }

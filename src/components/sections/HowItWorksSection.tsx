@@ -1,33 +1,25 @@
 "use client";
 
 import { useTranslation } from '@/contexts/LocaleContext';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { ClipboardPen, Tv2, Workflow, Icon as LucideIcon } from 'lucide-react';
 import Image from 'next/image';
-import type { LucideProps } from 'lucide-react';
-import React from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 interface Step {
   id: string;
   titleKey: string;
   descriptionKey: string;
-  iconName: keyof typeof iconComponents;
+  imageHint: string;
 }
-
-const iconComponents: { [key: string]: React.FC<LucideProps> } = {
-  ClipboardPen,
-  Tv2,
-  Workflow,
-};
-
 
 const HowItWorksSection = () => {
   const { t } = useTranslation();
 
   const steps: Step[] = [
-    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', iconName: 'ClipboardPen' },
-    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', iconName: 'Tv2' },
-    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', iconName: 'Workflow' },
+    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', imageHint: 'patient registration' },
+    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', imageHint: 'queue display' },
+    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', imageHint: 'doctor consultation' },
   ];
 
   return (
@@ -42,35 +34,33 @@ const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square max-w-md mx-auto lg:max-w-none lg:mx-0 rounded-xl shadow-xl overflow-hidden">
-            <Image
-              src="https://placehold.co/600x600.png"
-              alt={t('howItWorks.title')}
-              width={600}
-              height={600}
-              className="object-cover w-full h-full"
-              data-ai-hint="workflow diagram"
-            />
-          </div>
-          <div className="space-y-8">
-            {steps.map((step, index) => {
-              const IconComponent = iconComponents[step.iconName] as React.FC<LucideProps> | undefined;
-              return (
-                <div key={step.id} className="flex items-start gap-4">
-                  {IconComponent && (
-                    <div className="flex-shrink-0 h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold">
-                      <IconComponent className="h-6 w-6" />
-                    </div>
-                  )}
-                  <div>
-                    <h3 className="font-headline text-xl font-semibold text-primary mb-1">{t(step.titleKey)}</h3>
-                    <p className="text-foreground/70">{t(step.descriptionKey)}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="space-y-20 md:space-y-24">
+          {steps.map((step, index) => (
+            <div key={step.id} className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className={`relative aspect-video max-w-xl mx-auto lg:max-w-none lg:mx-0 rounded-xl shadow-2xl overflow-hidden group ${index % 2 !== 0 ? 'lg:order-last' : ''}`}>
+                <Image
+                  src="https://placehold.co/800x600.png"
+                  alt={t(step.titleKey)}
+                  width={800}
+                  height={600}
+                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
+                  data-ai-hint={step.imageHint}
+                />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+              </div>
+              
+              <div className="text-center lg:text-left">
+                <h3 className="font-headline text-2xl md:text-3xl font-bold text-primary mb-4">{t(step.titleKey)}</h3>
+                <p className="text-foreground/80 mb-8">{t(step.descriptionKey)}</p>
+                <Button asChild size="lg">
+                  <Link href="/demo">
+                    {t('howItWorks.ctaButton')}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
