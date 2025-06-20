@@ -4,6 +4,7 @@
 import Link from 'next/link';
 import { useTranslation } from '@/contexts/LocaleContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Rocket } from 'lucide-react';
@@ -29,7 +30,24 @@ const Navbar = () => {
   ];
 
   if (!isMounted) {
-    return null; // Avoid rendering mismatch during hydration
+    // Render a basic structure or null to avoid content flash/layout shift during SSR vs client hydration
+    // For a navbar, it might be better to render a minimal version or a placeholder of similar height
+    return (
+      <header className="sticky top-0 z-50 w-full bg-transparent">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary" aria-label={t('appName')}>
+            <Rocket className="h-7 w-7" />
+            <span className="font-headline">{t('appName')}</span>
+          </Link>
+          <div className="flex items-center gap-2">
+            {/* Placeholder for switchers to maintain layout */}
+            <div className="h-10 w-10 md:w-auto"></div> 
+            <div className="h-10 w-10 md:w-auto"></div>
+            <div className="md:hidden h-10 w-10"></div>
+          </div>
+        </div>
+      </header>
+    );
   }
 
   return (
@@ -48,8 +66,9 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3"> {/* Increased gap slightly for better spacing */}
           <LanguageSwitcher />
+          <ThemeSwitcher />
           <Button asChild className="hidden md:inline-flex">
             <Link href="#cta">{t('navbar.cta')}</Link>
           </Button>
@@ -85,3 +104,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
