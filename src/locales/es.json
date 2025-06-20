@@ -42,42 +42,23 @@
   },
   "howItWorks": {
     "title": "Pasos Sencillos Hacia la Eficiencia",
-    "subtitle": "Observa cómo QueuePilot gestiona el recorrido del paciente.",
+    "subtitle": "Observa cómo QueuePilot gestiona el recorrido del paciente de principio a fin.",
     "step1": {
       "title": "1. Registro Fácil",
-      "description": "Pacientes se registran en recepción. El sistema les asigna estado 'En Espera' y una posición en la cola del médico seleccionado."
+      "description": "Los pacientes se registran en recepción. El sistema asigna un estado de 'En Espera' y una posición en la cola del médico seleccionado."
     },
     "step2": {
       "title": "2. Espera Informada y Llamada",
-      "description": "Pacientes ven su turno en pantallas públicas. Médicos llaman a pacientes, cambiando estado a 'Llamando', visible en pantalla."
+      "description": "Los pacientes ven su turno en pantallas públicas. Los médicos llaman a los pacientes cambiando su estado a 'Llamando', lo cual se refleja en la pantalla."
     },
     "step3": {
       "title": "3. Consulta y Finalización",
-      "description": "Tras la consulta, el médico marca estado 'Completado'. Datos se registran para analíticas. También se gestionan ausencias/cancelaciones."
-    }
-  },
-  "testimonials": {
-    "title": "Con la Confianza de Empresas Como la Tuya",
-    "subtitle": "Escucha lo que nuestros clientes satisfechos tienen que decir sobre QueuePilot.",
-    "testimonial1": {
-      "quote": "QueuePilot revolucionó la forma en que gestionamos el flujo de clientes. ¡Los tiempos de espera se redujeron en un 30%!",
-      "author": "Sarah L.",
-      "company": "Clínica de la Ciudad"
-    },
-    "testimonial2": {
-      "quote": "Los análisis son un cambio de juego. Hemos optimizado la dotación de personal y mejorado significativamente la calidad del servicio.",
-      "author": "John B.",
-      "company": "Rey del Retail"
-    },
-    "testimonial3": {
-      "quote": "La implementación fue muy sencilla y el equipo de soporte es fantástico. ¡Altamente recomendado!",
-      "author": "Maria G.",
-      "company": "DMV Express"
+      "description": "Tras la consulta, el médico marca el estado como 'Completado'. Estos datos se registran para analíticas. También se gestionan ausencias/cancelaciones."
     }
   },
   "cta": {
     "title": "¿Listo para Transformar la Experiencia de Tus Clientes?",
-    "subtitle": "Únete a cientos de empresas que optimizan sus colas con QueuePilot.",
+    "subtitle": "Únete a otras de empresas que ya optimizan sus colas con QueuePilot.",
     "button": "Comienza Hoy Mismo"
   },
   "footer": {
@@ -91,5 +72,102 @@
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos de Servicio",
     "copyright": "© {{year}} QueuePilot. Todos los derechos reservados."
+  },
+  "privacyPolicy": {
+    "lastUpdated": "Última actualización: {{date}}",
+    "loadingDate": "Cargando fecha...",
+    "lastUpdatedLabel": "Última actualización",
+    "section1": {
+      "title": "1. Introducción",
+      "paragraph1": "Bienvenido a QueuePilot. Nos comprometemos a proteger tu información personal y tu derecho a la privacidad. Si tienes alguna pregunta o inquietud sobre este aviso de privacidad, o nuestras prácticas con respecto a tu información personal, contáctanos en {{email}}.",
+      "paragraph2": "Cuando visitas nuestro sitio web y, de manera más general, utilizas cualquiera de nuestros servicios (los \"Servicios\", que incluyen el Sitio Web), agradecemos que nos confíes tu información personal. Nos tomamos tu privacidad muy en serio. En este aviso de privacidad, buscamos explicarte de la manera más clara posible qué información recopilamos, cómo la usamos y qué derechos tienes en relación con ella. Esperamos que dediques tiempo a leerlo detenidamente, ya que es importante. Si hay algún término en este aviso de privacidad con el que no estás de acuerdo, por favor, suspende el uso de nuestros Servicios de inmediato."
+    },
+    "section2": {
+      "title": "2. Información que Recopilamos",
+      "paragraph1": "Recopilamos información personal que nos proporcionas voluntariamente cuando expresas interés en obtener información sobre nosotros o nuestros productos y Servicios, cuando participas en actividades en los Servicios o cuando te pones en contacto con nosotros.",
+      "paragraph2": "La información personal que recopilamos depende del contexto de tus interacciones con nosotros y los Servicios, las elecciones que realizas y los productos y características que utilizas. La información personal que recopilamos puede incluir lo siguiente: nombres; números de teléfono; direcciones de correo electrónico; direcciones postales; cargos laborales; preferencias de contacto; direcciones de facturación; y otra información similar."
+    },
+    "section3": {
+      "title": "3. Cómo Usamos Tu Información",
+      "paragraph1": "Utilizamos la información personal recopilada a través de nuestros Servicios para una variedad de fines comerciales que se describen a continuación. Procesamos tu información personal para estos fines en base a nuestros intereses comerciales legítimos, para celebrar o ejecutar un contrato contigo, con tu consentimiento y/o para cumplir con nuestras obligaciones legales.",
+      "listItem1": "Para facilitar la creación de cuentas y el proceso de inicio de sesión.",
+      "listItem2": "Para publicar testimonios.",
+      "listItem3": "Solicitar comentarios.",
+      "listItem4": "Para permitir las comunicaciones entre usuarios.",
+      "listItem5": "Para administrar las cuentas de los usuarios.",
+      "listItem6": "Para enviarte información administrativa.",
+      "listItem7": "Para proteger nuestros Servicios.",
+      "listItem8": "Para hacer cumplir nuestros términos, condiciones y políticas con fines comerciales, para cumplir con los requisitos legales y reglamentarios o en relación con nuestro contrato.",
+      "listItem9": "Para responder a solicitudes legales y prevenir daños."
+    },
+    "section4": {
+      "title": "4. ¿Se Compartirá Tu Información con Alguien?",
+      "paragraph1": "Solo compartimos información con tu consentimiento, para cumplir con las leyes, para proporcionarte servicios, para proteger tus derechos o para cumplir con obligaciones comerciales."
+    },
+    "section5": {
+      "title": "5. ¿Cuánto Tiempo Conservamos Tu Información?",
+      "paragraph1": "Solo conservaremos tu información personal durante el tiempo que sea necesario para los fines establecidos en este aviso de privacidad, a menos que la ley exija o permita un período de retención más largo (como requisitos fiscales, contables u otros requisitos legales)."
+    },
+    "section6": {
+      "title": "6. ¿Cómo Mantenemos Segura Tu Información?",
+      "paragraph1": "Hemos implementado medidas de seguridad técnicas y organizativas apropiadas diseñadas para proteger la seguridad de cualquier información personal que procesemos. Sin embargo, a pesar de nuestras salvaguardas y esfuerzos para proteger tu información, ninguna transmisión electrónica a través de Internet o tecnología de almacenamiento de información puede garantizarse como 100% segura."
+    },
+    "section7": {
+      "title": "7. ¿Cuáles Son Tus Derechos de Privacidad?",
+      "paragraph1": "En algunas regiones (como el Espacio Económico Europeo y el Reino Unido), tienes ciertos derechos en virtud de las leyes de protección de datos aplicables. Estos pueden incluir el derecho (i) a solicitar acceso y obtener una copia de tu información personal, (ii) a solicitar la rectificación o eliminación; (iii) a restringir el procesamiento de tu información personal; y (iv) si corresponde, a la portabilidad de los datos. En determinadas circunstancias, también puedes tener derecho a oponerte al procesamiento de tu información personal."
+    },
+    "section8": {
+      "title": "8. Actualizaciones de Este Aviso",
+      "paragraph1": "Podemos actualizar este aviso de privacidad de vez en cuando. La versión actualizada se indicará con una fecha de \"{{lastUpdated}}\" actualizada y la versión actualizada entrará en vigencia tan pronto como sea accesible."
+    },
+    "section9": {
+      "title": "9. ¿Cómo Puedes Contactarnos Sobre Este Aviso?",
+      "paragraph1": "Si tienes preguntas o comentarios sobre este aviso, puedes enviarnos un correo electrónico a {{email}} o por correo postal a:",
+      "companyName": "QueuePilot",
+      "address": "{{address}}"
+    }
+  },
+  "termsOfService": {
+    "lastUpdated": "Última actualización: {{date}}",
+    "loadingDate": "Cargando fecha...",
+    "section1": {
+      "title": "1. Acuerdo de los Términos",
+      "paragraph1": "Al utilizar nuestros Servicios, aceptas regirte por estos Términos. Si no aceptas regirte por estos Términos, no utilices los Servicios."
+    },
+    "section2": {
+      "title": "2. Cambios en los Términos o Servicios",
+      "paragraph1": "Podemos actualizar los Términos en cualquier momento, a nuestra entera discreción. Si lo hacemos, te lo haremos saber publicando los Términos actualizados en el Sitio o mediante otras comunicaciones. Es importante que revises los Términos cada vez que los actualicemos o utilices los Servicios."
+    },
+    "section3": {
+      "title": "3. ¿Quién Puede Usar los Servicios?",
+      "paragraph1": "Puedes utilizar los Servicios solo si tienes 18 años o más y eres capaz de formalizar un contrato vinculante con QueuePilot y no se te prohíbe utilizar los Servicios según la ley aplicable."
+    },
+    "section4": {
+      "title": "4. Contenido y Derechos de Contenido",
+      "paragraph1": "A los efectos de estos Términos: (i) \"Contenido\" significa texto, gráficos, imágenes, música, software, audio, video, obras de autoría de cualquier tipo e información u otros materiales que se publican, generan, proporcionan o ponen a disposición de otro modo a través de los Servicios; y (ii) \"Contenido del Usuario\" significa cualquier Contenido que los titulares de Cuentas (incluido tú) proporcionen para que esté disponible a través de los Servicios. El Contenido incluye, sin limitación, el Contenido del Usuario."
+    },
+    "section5": {
+      "title": "5. Prohibiciones Generales y Derechos de Ejecución de QueuePilot",
+      "paragraph1": "Aceptas no realizar ninguna de las siguientes acciones:",
+      "listItem1": "Publicar, cargar, divulgar, enviar o transmitir cualquier Contenido del Usuario que: (i) infrinja, se apropie indebidamente o viole una patente, derecho de autor, marca registrada, secreto comercial, derechos morales u otros derechos de propiedad intelectual de un tercero, o derechos de publicidad o privacidad; (ii) viole, o fomente cualquier conducta que viole, cualquier ley o regulación aplicable o que dé lugar a responsabilidad civil; (iii) sea fraudulento, falso, engañoso o falaz; (iv) sea difamatorio, obsceno, pornográfico, vulgar u ofensivo; (v) promueva la discriminación, la intolerancia, el racismo, el odio, el acoso o el daño contra cualquier individuo o grupo; (vi) sea violento o amenazante o promueva la violencia o acciones que sean amenazantes para cualquier persona o entidad; o (vii) promueva actividades o sustancias ilegales o dañinas.",
+      "listItem2": "Usar, mostrar, reflejar o enmarcar los Servicios o cualquier elemento individual dentro de los Servicios, el nombre de QueuePilot, cualquier marca registrada, logotipo u otra información de propiedad de QueuePilot, o el diseño y la maquetación de cualquier página o formulario contenido en una página, sin el consentimiento expreso por escrito de QueuePilot;",
+      "listItem3": "Intentar sondear, escanear o probar la vulnerabilidad de cualquier sistema o red de QueuePilot o violar cualquier medida de seguridad o autenticación;"
+    },
+    "section6": {
+      "title": "6. Terminación",
+      "paragraph1": "Podemos rescindir tu acceso y uso de los Servicios, a nuestra entera discreción, en cualquier momento y sin previo aviso."
+    },
+    "section7": {
+      "title": "7. Descargos de Responsabilidad",
+      "paragraph1": "LOS SERVICIOS SE PROPORCIONAN “TAL CUAL”, SIN GARANTÍA DE NINGÚN TIPO. SIN LIMITAR LO ANTERIOR, RENUNCIAMOS EXPLÍCITAMENTE A CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR, DISFRUTE TRANQUILO Y NO INFRACCIÓN, Y CUALQUIER GARANTÍA QUE SURJA DEL CURSO DE LA NEGOCIACIÓN O EL USO COMERCIAL."
+    },
+    "section8": {
+      "title": "8. Limitación de Responsabilidad",
+      "paragraph1": "NI QUEUEPILOT NI NINGUNA OTRA PARTE INVOLUCRADA EN LA CREACIÓN, PRODUCCIÓN O ENTREGA DE LOS SERVICIOS SERÁ RESPONSABLE DE NINGÚN DAÑO INCIDENTAL, ESPECIAL, EJEMPLAR O CONSECUENTE, O DAÑOS POR PÉRDIDA DE BENEFICIOS, PÉRDIDA DE INGRESOS, PÉRDIDA DE AHORROS, PÉRDIDA DE OPORTUNIDAD DE NEGOCIO, PÉRDIDA DE DATOS O FONDO DE COMERCIO, INTERRUPCIÓN DEL SERVICIO, DAÑO INFORMÁTICO O FALLA DEL SISTEMA O EL COSTO DE SERVICIOS SUSTITUTOS DE CUALQUIER TIPO QUE SURJAN DE O EN RELACIÓN CON ESTOS TÉRMINOS O DEL USO O LA INCAPACIDAD DE USAR LOS SERVICIOS."
+    },
+    "section9": {
+      "title": "9. Información de Contacto",
+      "paragraph1": "Si tienes alguna pregunta sobre estos Términos o los Servicios, comunícate con QueuePilot en {{email}}."
+    }
   }
 }

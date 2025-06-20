@@ -42,37 +42,18 @@
   },
   "howItWorks": {
     "title": "Simple Steps to Efficiency",
-    "subtitle": "See how QueuePilot manages the patient journey.",
+    "subtitle": "See how QueuePilot manages the patient journey from start to finish.",
     "step1": {
       "title": "1. Easy Registration",
-      "description": "Patients register at reception. The system assigns them 'Waiting' status and a queue position for the selected doctor."
+      "description": "Patients are registered at reception. The system assigns a 'Waiting' status and a queue position for the selected doctor."
     },
     "step2": {
       "title": "2. Informed Waiting & Calling",
-      "description": "Patients see their turn on public displays. Doctors call patients, changing status to 'Calling', which is shown on the display."
+      "description": "Patients see their turn on public displays. Doctors call patients by changing their status to 'Calling', which is reflected on the display."
     },
     "step3": {
       "title": "3. Consultation & Completion",
-      "description": "After consultation, the doctor marks status 'Completed'. Data is logged for analytics. No-shows/cancellations are also managed."
-    }
-  },
-  "testimonials": {
-    "title": "Trusted by Businesses Like Yours",
-    "subtitle": "Hear what our satisfied customers have to say about QueuePilot.",
-    "testimonial1": {
-      "quote": "QueuePilot revolutionized how we manage customer flow. Wait times are down 30%!",
-      "author": "Sarah L.",
-      "company": "City Clinic"
-    },
-    "testimonial2": {
-      "quote": "The analytics are a game-changer. We've optimized staffing and improved service quality significantly.",
-      "author": "John B.",
-      "company": "Retail King"
-    },
-    "testimonial3": {
-      "quote": "Implementation was a breeze, and the support team is fantastic. Highly recommended!",
-      "author": "Maria G.",
-      "company": "DMV Express"
+      "description": "After consultation, the doctor marks the status as 'Completed'. This data is logged for analytics. No-shows/cancellations are also managed."
     }
   },
   "cta": {
@@ -91,5 +72,102 @@
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "copyright": "© {{year}} QueuePilot. All rights reserved."
+  },
+  "privacyPolicy": {
+    "lastUpdated": "Last updated: {{date}}",
+    "loadingDate": "Loading date...",
+    "lastUpdatedLabel": "Last updated",
+    "section1": {
+      "title": "1. Introduction",
+      "paragraph1": "Welcome to QueuePilot. We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at {{email}}.",
+      "paragraph2": "When you visit our website and more generally, use any of our services (the \"Services\", which include the Website), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately."
+    },
+    "section2": {
+      "title": "2. Information We Collect",
+      "paragraph1": "We collect personal information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services or otherwise when you contact us.",
+      "paragraph2": "The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make and the products and features you use. The personal information we collect may include the following: names; phone numbers; email addresses; mailing addresses; job titles; contact preferences; billing addresses; and other similar information."
+    },
+    "section3": {
+      "title": "3. How We Use Your Information",
+      "paragraph1": "We use personal information collected via our Services for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.",
+      "listItem1": "To facilitate account creation and logon process.",
+      "listItem2": "To post testimonials.",
+      "listItem3": "Request feedback.",
+      "listItem4": "To enable user-to-user communications.",
+      "listItem5": "To manage user accounts.",
+      "listItem6": "To send administrative information to you.",
+      "listItem7": "To protect our Services.",
+      "listItem8": "To enforce our terms, conditions and policies for business purposes, to comply with legal and regulatory requirements or in connection with our contract.",
+      "listItem9": "To respond to legal requests and prevent harm."
+    },
+    "section4": {
+      "title": "4. Will Your Information Be Shared With Anyone?",
+      "paragraph1": "We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations."
+    },
+    "section5": {
+      "title": "5. How Long Do We Keep Your Information?",
+      "paragraph1": "We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements)."
+    },
+    "section6": {
+      "title": "6. How Do We Keep Your Information Safe?",
+      "paragraph1": "We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure."
+    },
+    "section7": {
+      "title": "7. What Are Your Privacy Rights?",
+      "paragraph1": "In some regions (like the European Economic Area and the United Kingdom), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information."
+    },
+    "section8": {
+      "title": "8. Updates to This Notice",
+      "paragraph1": "We may update this privacy notice from time to time. The updated version will be indicated by an updated \"{{lastUpdated}}\" date and the updated version will be effective as soon as it is accessible."
+    },
+    "section9": {
+      "title": "9. How Can You Contact Us About This Notice?",
+      "paragraph1": "If you have questions or comments about this notice, you may email us at {{email}} or by post to:",
+      "companyName": "QueuePilot",
+      "address": "{{address}}"
+    }
+  },
+  "termsOfService": {
+    "lastUpdated": "Last updated: {{date}}",
+    "loadingDate": "Loading date...",
+    "section1": {
+      "title": "1. Agreement to Terms",
+      "paragraph1": "By using our Services, you agree to be bound by these Terms. If you do not agree to be bound by these Terms, do not use the Services."
+    },
+    "section2": {
+      "title": "2. Changes to Terms or Services",
+      "paragraph1": "We may update the Terms at any time, in our sole discretion. If we do so, we’ll let you know either by posting the updated Terms on the Site or through other communications. It’s important that you review the Terms whenever we update them or you use the Services."
+    },
+    "section3": {
+      "title": "3. Who May Use the Services?",
+      "paragraph1": "You may use the Services only if you are 18 years or older and capable of forming a binding contract with QueuePilot and are not barred from using the Services under applicable law."
+    },
+    "section4": {
+      "title": "4. Content and Content Rights",
+      "paragraph1": "For purposes of these Terms: (i) \"Content\" means text, graphics, images, music, software, audio, video, works of authorship of any kind, and information or other materials that are posted, generated, provided or otherwise made available through the Services; and (ii) \"User Content\" means any Content that Account holders (including you) provide to be made available through the Services. Content includes without limitation User Content."
+    },
+    "section5": {
+      "title": "5. General Prohibitions and QueuePilot's Enforcement Rights",
+      "paragraph1": "You agree not to do any of the following:",
+      "listItem1": "Post, upload, publish, submit or transmit any User Content that: (i) infringes, misappropriates or violates a third party’s patent, copyright, trademark, trade secret, moral rights or other intellectual property rights, or rights of publicity or privacy; (ii) violates, or encourages any conduct that would violate, any applicable law or regulation or would give rise to civil liability; (iii) is fraudulent, false, misleading or deceptive; (iv) is defamatory, obscene, pornographic, vulgar or offensive; (v) promotes discrimination, bigotry, racism, hatred, harassment or harm against any individual or group; (vi) is violent or threatening or promotes violence or actions that are threatening to any person or entity; or (vii) promotes illegal or harmful activities or substances.",
+      "listItem2": "Use, display, mirror or frame the Services or any individual element within the Services, QueuePilot’s name, any QueuePilot trademark, logo or other proprietary information, or the layout and design of any page or form contained on a page, without QueuePilot’s express written consent;",
+      "listItem3": "Attempt to probe, scan or test the vulnerability of any QueuePilot system or network or breach any security or authentication measures;"
+    },
+    "section6": {
+      "title": "6. Termination",
+      "paragraph1": "We may terminate your access to and use of the Services, at our sole discretion, at any time and without notice to you."
+    },
+    "section7": {
+      "title": "7. Disclaimers",
+      "paragraph1": "THE SERVICES ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND. WITHOUT LIMITING THE FOREGOING, WE EXPLICITLY DISCLAIM ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE."
+    },
+    "section8": {
+      "title": "8. Limitation of Liability",
+      "paragraph1": "NEITHER QUEUEPILOT NOR ANY OTHER PARTY INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES."
+    },
+    "section9": {
+      "title": "9. Contact Information",
+      "paragraph1": "If you have any questions about these Terms or the Services, please contact QueuePilot at {{email}}."
+    }
   }
 }
