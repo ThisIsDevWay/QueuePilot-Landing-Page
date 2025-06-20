@@ -1,0 +1,103 @@
+{
+  "appName": "QueuePilot",
+  "navbar": {
+    "home": "Home",
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "testimonials": "Testimonials",
+    "cta": "Get Started",
+    "language": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "hero": {
+    "title": "Manage Your Queues Effortlessly with QueuePilot",
+    "subtitle": "Streamline operations, reduce wait times, and enhance customer satisfaction. Your ultimate solution for intelligent queue management.",
+    "ctaButton": "Request a Demo",
+    "secondaryButton": "Learn More"
+  },
+  "features": {
+    "title": "Why Choose QueuePilot?",
+    "subtitle": "Discover the powerful features that make QueuePilot the best choice for your business.",
+    "feature1": {
+      "title": "Real-time Monitoring",
+      "description": "Keep track of queue lengths and wait times instantly.",
+      "icon": "Activity"
+    },
+    "feature2": {
+      "title": "Smart Notifications",
+      "description": "Alert staff and customers about queue status and updates.",
+      "icon": "Bell"
+    },
+    "feature3": {
+      "title": "Analytics & Reporting",
+      "description": "Gain insights into performance with comprehensive data.",
+      "icon": "BarChart2"
+    },
+    "feature4": {
+      "title": "Easy Integration",
+      "description": "Seamlessly connect with your existing systems and workflows.",
+      "icon": "Shuffle"
+    }
+  },
+  "howItWorks": {
+    "title": "Simple Steps to Efficiency",
+    "subtitle": "Understand how QueuePilot transforms your queue management in a few easy steps.",
+    "step1": {
+      "title": "Setup Your Queues",
+      "description": "Easily configure your service points and queue parameters within minutes.",
+      "icon": "Settings"
+    },
+    "step2": {
+      "title": "Customers Join Virtually",
+      "description": "Customers can join queues remotely via mobile app or kiosks.",
+      "icon": "Smartphone"
+    },
+    "step3": {
+      "title": "Manage & Monitor",
+      "description": "Staff efficiently manage queues and call customers forward with real-time updates.",
+      "icon": "Users"
+    },
+    "step4": {
+      "title": "Improve Satisfaction",
+      "description": "Reduce perceived and actual wait times, leading to happier customers.",
+      "icon": "Smile"
+    }
+  },
+  "testimonials": {
+    "title": "Trusted by Businesses Like Yours",
+    "subtitle": "Hear what our satisfied customers have to say about QueuePilot.",
+    "testimonial1": {
+      "quote": "QueuePilot revolutionized how we manage customer flow. Wait times are down 30%!",
+      "author": "Sarah L.",
+      "company": "City Clinic"
+    },
+    "testimonial2": {
+      "quote": "The analytics are a game-changer. We've optimized staffing and improved service quality significantly.",
+      "author": "John B.",
+      "company": "Retail King"
+    },
+    "testimonial3": {
+      "quote": "Implementation was a breeze, and the support team is fantastic. Highly recommended!",
+      "author": "Maria G.",
+      "company": "DMV Express"
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Customer Experience?",
+    "subtitle": "Join hundreds of businesses optimizing their queues with QueuePilot.",
+    "button": "Get Started Today"
+  },
+  "footer": {
+    "description": "Revolutionizing queue management for businesses worldwide.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "email": "support@queuepilot.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Pilot Street, Queue City, QC 54321",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "© {{year}} QueuePilot. All rights reserved."
+  }
+}

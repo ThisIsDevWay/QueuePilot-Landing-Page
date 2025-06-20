@@ -1,0 +1,103 @@
+{
+  "appName": "QueuePilot",
+  "navbar": {
+    "home": "Inicio",
+    "features": "Características",
+    "howItWorks": "Cómo Funciona",
+    "testimonials": "Testimonios",
+    "cta": "Comenzar",
+    "language": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "hero": {
+    "title": "Gestiona Tus Colas Sin Esfuerzo con QueuePilot",
+    "subtitle": "Optimiza operaciones, reduce tiempos de espera y mejora la satisfacción del cliente. Tu solución definitiva para la gestión inteligente de colas.",
+    "ctaButton": "Solicitar una Demo",
+    "secondaryButton": "Saber Más"
+  },
+  "features": {
+    "title": "¿Por Qué Elegir QueuePilot?",
+    "subtitle": "Descubre las potentes características que hacen de QueuePilot la mejor opción para tu negocio.",
+    "feature1": {
+      "title": "Monitoreo en Tiempo Real",
+      "description": "Haz seguimiento instantáneo de la longitud de las colas y los tiempos de espera.",
+      "icon": "Activity"
+    },
+    "feature2": {
+      "title": "Notificaciones Inteligentes",
+      "description": "Alerta al personal y a los clientes sobre el estado de la cola y actualizaciones.",
+      "icon": "Bell"
+    },
+    "feature3": {
+      "title": "Análisis e Informes",
+      "description": "Obtén información sobre el rendimiento con datos completos.",
+      "icon": "BarChart2"
+    },
+    "feature4": {
+      "title": "Fácil Integración",
+      "description": "Conecta sin problemas con tus sistemas y flujos de trabajo existentes.",
+      "icon": "Shuffle"
+    }
+  },
+  "howItWorks": {
+    "title": "Pasos Sencillos Hacia la Eficiencia",
+    "subtitle": "Comprende cómo QueuePilot transforma la gestión de tus colas en unos pocos y sencillos pasos.",
+    "step1": {
+      "title": "Configura Tus Colas",
+      "description": "Configura fácilmente tus puntos de servicio y parámetros de cola en minutos.",
+      "icon": "Settings"
+    },
+    "step2": {
+      "title": "Clientes se Unen Virtualmente",
+      "description": "Los clientes pueden unirse a las colas de forma remota a través de la aplicación móvil o quioscos.",
+      "icon": "Smartphone"
+    },
+    "step3": {
+      "title": "Gestiona y Monitorea",
+      "description": "El personal gestiona eficientemente las colas y llama a los clientes con actualizaciones en tiempo real.",
+      "icon": "Users"
+    },
+    "step4": {
+      "title": "Mejora la Satisfacción",
+      "description": "Reduce los tiempos de espera percibidos y reales, lo que lleva a clientes más felices.",
+      "icon": "Smile"
+    }
+  },
+  "testimonials": {
+    "title": "Con la Confianza de Empresas Como la Tuya",
+    "subtitle": "Escucha lo que nuestros clientes satisfechos tienen que decir sobre QueuePilot.",
+    "testimonial1": {
+      "quote": "QueuePilot revolucionó la forma en que gestionamos el flujo de clientes. ¡Los tiempos de espera se redujeron en un 30%!",
+      "author": "Sarah L.",
+      "company": "Clínica de la Ciudad"
+    },
+    "testimonial2": {
+      "quote": "Los análisis son un cambio de juego. Hemos optimizado la dotación de personal y mejorado significativamente la calidad del servicio.",
+      "author": "John B.",
+      "company": "Rey del Retail"
+    },
+    "testimonial3": {
+      "quote": "La implementación fue muy sencilla y el equipo de soporte es fantástico. ¡Altamente recomendado!",
+      "author": "Maria G.",
+      "company": "DMV Express"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Transformar la Experiencia de Tus Clientes?",
+    "subtitle": "Únete a cientos de empresas que optimizan sus colas con QueuePilot.",
+    "button": "Comienza Hoy Mismo"
+  },
+  "footer": {
+    "description": "Revolucionando la gestión de colas para empresas de todo el mundo.",
+    "quickLinks": "Enlaces Rápidos",
+    "contactUs": "Contáctanos",
+    "email": "soporte@queuepilot.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "Calle Piloto 123, Ciudad Cola, QC 54321",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "copyright": "© {{year}} QueuePilot. Todos los derechos reservados."
+  }
+}
