@@ -7,8 +7,10 @@ import LanguageSwitcher from '@/components/LanguageSwitcher';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Rocket } from 'lucide-react';
+import { Menu, Rocket, Layers, Workflow } from 'lucide-react';
+import type { LucideProps } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import React from 'react';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -24,9 +26,15 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: '#features', label: t('navbar.features') },
-    { href: '#how-it-works', label: t('navbar.howItWorks') },
+  interface NavLink {
+    href: string;
+    label: string;
+    icon: React.FC<LucideProps>;
+  }
+
+  const navLinks: NavLink[] = [
+    { href: '#features', label: t('navbar.features'), icon: Layers },
+    { href: '#how-it-works', label: t('navbar.howItWorks'), icon: Workflow },
   ];
 
   if (!isMounted) {
@@ -58,12 +66,16 @@ const Navbar = () => {
           <span className="font-headline">{t('appName')}</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="text-[22px] font-bold text-foreground hover:text-primary transition-colors">
-              {link.label}
-            </Link>
-          ))}
+        <nav className="hidden items-center gap-8 md:flex">
+          {navLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <Link key={link.href} href={link.href} className="flex items-center gap-2 text-[22px] font-bold text-foreground hover:text-primary transition-colors">
+                <Icon className="h-6 w-6" />
+                {link.label}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className="flex items-center gap-3"> {/* Increased gap slightly for better spacing */}
@@ -85,11 +97,15 @@ const Navbar = () => {
                   <Rocket className="h-7 w-7" />
                   <span className="font-headline">{t('appName')}</span>
                 </Link>
-                  {navLinks.map((link) => (
-                    <Link key={link.href} href={link.href} className="text-[22px] font-bold text-foreground hover:text-primary transition-colors">
-                      {link.label}
-                    </Link>
-                  ))}
+                  {navLinks.map((link) => {
+                     const Icon = link.icon;
+                    return (
+                      <Link key={link.href} href={link.href} className="flex items-center gap-2 text-[22px] font-bold text-foreground hover:text-primary transition-colors">
+                         <Icon className="h-6 w-6" />
+                        {link.label}
+                      </Link>
+                    )
+                  })}
                   <Button asChild className="w-full">
                     <Link href="/demo">{t('navbar.cta')}</Link>
                   </Button>
@@ -104,5 +120,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
