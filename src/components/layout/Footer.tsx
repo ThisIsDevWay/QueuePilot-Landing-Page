@@ -5,6 +5,18 @@ import Link from 'next/link';
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Rocket, Mail, Phone, MapPin } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+  DialogClose
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import PrivacyPolicyContent from '@/app/privacy-policy/page';
+import TermsOfServiceContent from '@/app/terms-of-service/page';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -17,7 +29,16 @@ const Footer = () => {
   }, []);
   
   if (!isMounted) {
-    return null;
+    // Render a minimal placeholder or null to prevent flash of unstyled content or errors during SSR
+    return (
+      <footer className="bg-secondary text-secondary-foreground py-12 md:py-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center text-sm text-secondary-foreground/70">
+            <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
+          </div>
+        </div>
+      </footer>
+    );
   }
 
   const footerLinks = {
@@ -25,10 +46,6 @@ const Footer = () => {
       { href: '#features', label: t('navbar.features') },
       { href: '#how-it-works', label: t('navbar.howItWorks') },
       { href: '#cta', label: t('navbar.cta') },
-    ],
-    legal: [
-      { href: '/privacy-policy', label: t('footer.privacyPolicy') },
-      { href: '/terms-of-service', label: t('footer.termsOfService') },
     ],
   };
 
@@ -80,13 +97,46 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 font-headline">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              {footerLinks.legal.map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="text-sm hover:text-primary transition-colors text-left w-full">{t('footer.privacyPolicy')}</button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl md:max-w-3xl max-h-[85vh] flex flex-col">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl mb-2">{t('footer.privacyPolicy')}</DialogTitle>
+                    </DialogHeader>
+                    <div className="overflow-y-auto py-2 pr-2 flex-grow">
+                      <PrivacyPolicyContent />
+                    </div>
+                    <DialogFooter className="mt-auto pt-4">
+                      <DialogClose asChild>
+                        <Button type="button" variant="outline">Close</Button>
+                      </DialogClose>
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
+              </li>
+              <li>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <button className="text-sm hover:text-primary transition-colors text-left w-full">{t('footer.termsOfService')}</button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-2xl md:max-w-3xl max-h-[85vh] flex flex-col">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl mb-2">{t('footer.termsOfService')}</DialogTitle>
+                    </DialogHeader>
+                    <div className="overflow-y-auto py-2 pr-2 flex-grow">
+                      <TermsOfServiceContent />
+                    </div>
+                    <DialogFooter className="mt-auto pt-4">
+                      <DialogClose asChild>
+                        <Button type="button" variant="outline">Close</Button>
+                      </DialogClose>
+                    </DialogFooter>
+                  </DialogContent>
+                </Dialog>
+              </li>
             </ul>
           </div>
         </div>

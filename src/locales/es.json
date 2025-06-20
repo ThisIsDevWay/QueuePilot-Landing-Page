@@ -5,7 +5,7 @@
     "home": "Inicio",
     "features": "Características",
     "howItWorks": "Cómo Funciona",
-    "cta": "Comenzar",
+    "cta": "Prueba una Demo",
     "language": "Idioma",
     "english": "Inglés",
     "spanish": "Español"
@@ -13,7 +13,7 @@
   "hero": {
     "title": "Gestiona Tus Colas Sin Esfuerzo con QueuePilot",
     "subtitle": "Optimiza operaciones, reduce tiempos de espera y mejora la satisfacción del cliente. Tu solución definitiva para la gestión inteligente de colas.",
-    "ctaButton": "Solicitar una Demo",
+    "ctaButton": "Prueba una Demo",
     "secondaryButton": "Saber Más"
   },
   "features": {
@@ -84,8 +84,8 @@
     "description": "Revolucionando la gestión de colas para empresas de todo el mundo.",
     "quickLinks": "Enlaces Rápidos",
     "contactUs": "Contáctanos",
-    "email": "soporte@queuepilot.com",
-    "phone": "+1 (555) 123-4567",
+    "email": "queuepilot.app@gmail.com",
+    "phone": "+58(424)6302323",
     "address": "Calle Piloto 123, Ciudad Cola, QC 54321",
     "legal": "Legal",
     "privacyPolicy": "Política de Privacidad",
