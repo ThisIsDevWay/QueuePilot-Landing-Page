@@ -1,8 +1,9 @@
+
 "use client";
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Activity, Bell, BarChart2, Shuffle, Icon as LucideIcon } from 'lucide-react';
+import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Icon as LucideIcon } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 import React from 'react';
 
@@ -14,20 +15,22 @@ interface Feature {
 }
 
 const iconComponents: { [key: string]: React.FC<LucideProps> } = {
-  Activity,
-  Bell,
+  TrendingUp,
+  Smile,
+  LayoutGrid,
   BarChart2,
-  Shuffle,
+  Languages,
 };
 
 const FeaturesSection = () => {
   const { t } = useTranslation();
 
   const features: Feature[] = [
-    { id: 'feature1', titleKey: 'features.feature1.title', descriptionKey: 'features.feature1.description', iconName: 'Activity' },
-    { id: 'feature2', titleKey: 'features.feature2.title', descriptionKey: 'features.feature2.description', iconName: 'Bell' },
-    { id: 'feature3', titleKey: 'features.feature3.title', descriptionKey: 'features.feature3.description', iconName: 'BarChart2' },
-    { id: 'feature4', titleKey: 'features.feature4.title', descriptionKey: 'features.feature4.description', iconName: 'Shuffle' },
+    { id: 'feature1', titleKey: 'features.feature1.title', descriptionKey: 'features.feature1.description', iconName: 'TrendingUp' },
+    { id: 'feature2', titleKey: 'features.feature2.title', descriptionKey: 'features.feature2.description', iconName: 'Smile' },
+    { id: 'feature3', titleKey: 'features.feature3.title', descriptionKey: 'features.feature3.description', iconName: 'LayoutGrid' },
+    { id: 'feature4', titleKey: 'features.feature4.title', descriptionKey: 'features.feature4.description', iconName: 'BarChart2' },
+    { id: 'feature5', titleKey: 'features.feature5.title', descriptionKey: 'features.feature5.description', iconName: 'Languages' },
   ];
 
   return (
@@ -42,7 +45,7 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature) => {
             const IconComponent = iconComponents[feature.iconName] as React.FC<LucideProps> | undefined;
             return (
