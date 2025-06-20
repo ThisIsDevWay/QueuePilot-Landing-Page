@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -25,7 +26,6 @@ const Navbar = () => {
   const navLinks = [
     { href: '#features', label: t('navbar.features') },
     { href: '#how-it-works', label: t('navbar.howItWorks') },
-    { href: '#testimonials', label: t('navbar.testimonials') },
   ];
 
   if (!isMounted) {

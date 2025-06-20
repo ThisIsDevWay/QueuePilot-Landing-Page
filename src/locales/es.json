@@ -5,7 +5,6 @@
     "home": "Inicio",
     "features": "Características",
     "howItWorks": "Cómo Funciona",
-    "testimonials": "Testimonios",
     "cta": "Comenzar",
     "language": "Idioma",
     "english": "Inglés",
@@ -18,43 +17,43 @@
     "secondaryButton": "Saber Más"
   },
   "features": {
-    "title": "¿Por Qué Elegir QueuePilot?",
-    "subtitle": "Descubre las potentes características que hacen de QueuePilot la mejor opción para tu negocio.",
+    "title": "Razones Clave para Elegir QueuePilot",
+    "subtitle": "Descubre las potentes características que hacen de QueuePilot la mejor opción para tu clínica o negocio.",
     "feature1": {
-      "title": "Optimización del Flujo",
-      "description": "Reduce drásticamente los tiempos de espera y mejora la eficiencia operativa general de tu clínica con visibilidad en tiempo real para una gestión proactiva."
+      "title": "Optimización del Flujo de Pacientes",
+      "description": "Reduce drásticamente los tiempos de espera y mejora la eficiencia operativa general con visibilidad en tiempo real para una gestión proactiva del flujo."
     },
     "feature2": {
       "title": "Experiencia Mejorada para Todos",
       "description": "Interfaz intuitiva para personal y médicos, y pantalla pública que mantiene informados a los pacientes, reduciendo la ansiedad y mejorando su experiencia."
     },
     "feature3": {
-      "title": "Gestión Centralizada",
-      "description": "Desde el registro de pacientes hasta la gestión de médicos, especialidades, consultorios y publicidad para la pantalla pública, todo en una plataforma."
+      "title": "Gestión Integral y Centralizada",
+      "description": "Desde el registro de pacientes hasta la administración de médicos, especialidades, consultorios y publicidad, todo en una plataforma."
     },
     "feature4": {
-      "title": "Reportes Clave e Información",
+      "title": "Información Clave a Través de Reportes",
       "description": "Accede a reportes y estadísticas detalladas sobre rendimiento, tiempos de espera y ocupación para tomar decisiones informadas y optimizar servicios."
     },
     "feature5": {
-      "title": "Soporte Multilingüe",
+      "title": "Soporte Multilingüe Integrado",
       "description": "Disponible en Español (por defecto) e Inglés, facilitando su adopción en entornos diversos y mejorando la comunicación."
     }
   },
   "howItWorks": {
     "title": "Pasos Sencillos Hacia la Eficiencia",
-    "subtitle": "Observa cómo QueuePilot gestiona todo el recorrido del paciente, desde su llegada hasta la finalización del servicio.",
+    "subtitle": "Observa cómo QueuePilot gestiona el recorrido del paciente.",
     "step1": {
-      "title": "Registro Rápido",
-      "description": "Pacientes se registran fácilmente en recepción o quiosco, uniéndose a la cola para su servicio o médico. Estado: 'En Espera'."
+      "title": "1. Registro Fácil",
+      "description": "Pacientes se registran en recepción. El sistema les asigna estado 'En Espera' y una posición en la cola del médico seleccionado."
     },
     "step2": {
-      "title": "Espera Informada y Llamada",
-      "description": "Pacientes ven su turno en pantallas públicas. Médicos o personal llaman al siguiente paciente, cambiando su estado a 'Llamando'."
+      "title": "2. Espera Informada y Llamada",
+      "description": "Pacientes ven su turno en pantallas públicas. Médicos llaman a pacientes, cambiando estado a 'Llamando', visible en pantalla."
     },
     "step3": {
-      "title": "Consulta y Finalización",
-      "description": "Tras la consulta, el médico marca estado como 'Completado'. Datos se registran para analíticas, optimizando la clínica."
+      "title": "3. Consulta y Finalización",
+      "description": "Tras la consulta, el médico marca estado 'Completado'. Datos se registran para analíticas. También se gestionan ausencias/cancelaciones."
     }
   },
   "testimonials": {

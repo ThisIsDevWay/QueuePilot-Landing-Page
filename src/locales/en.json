@@ -5,7 +5,6 @@
     "home": "Home",
     "features": "Features",
     "howItWorks": "How It Works",
-    "testimonials": "Testimonials",
     "cta": "Get Started",
     "language": "Language",
     "english": "English",
@@ -18,22 +17,22 @@
     "secondaryButton": "Learn More"
   },
   "features": {
-    "title": "Why Choose QueuePilot?",
-    "subtitle": "Discover the powerful features that make QueuePilot the best choice for your business.",
+    "title": "Key Reasons to Choose QueuePilot",
+    "subtitle": "Discover the powerful features that make QueuePilot the best choice for your clinic or business.",
     "feature1": {
-      "title": "Optimized Workflow",
-      "description": "Dramatically reduce wait times and improve your clinic's overall operational efficiency with real-time queue visibility for proactive patient flow management."
+      "title": "Optimized Patient Flow",
+      "description": "Dramatically reduce wait times and improve overall operational efficiency with real-time queue visibility for proactive patient flow management."
     },
     "feature2": {
       "title": "Enhanced Experience for All",
       "description": "Intuitive UI for staff and doctors, plus a public display keeping patients informed, reducing anxiety and improving their overall clinic experience."
     },
     "feature3": {
-      "title": "Centralized Management",
+      "title": "Comprehensive Management",
       "description": "From patient registration to managing doctors, specialties, offices, and public display ads—all key clinic operations in one platform."
     },
     "feature4": {
-      "title": "Key Reports & Analytics",
+      "title": "Insightful Reporting",
       "description": "Access detailed reports and statistics on clinic performance, wait times, and occupancy by doctor/specialty to make informed decisions."
     },
     "feature5": {
@@ -43,18 +42,18 @@
   },
   "howItWorks": {
     "title": "Simple Steps to Efficiency",
-    "subtitle": "See how QueuePilot manages the entire patient journey from arrival to service completion.",
+    "subtitle": "See how QueuePilot manages the patient journey.",
     "step1": {
-      "title": "Quick Registration",
-      "description": "Patients register easily at reception or a kiosk, joining the queue for their chosen service or doctor. Status: 'Waiting'."
+      "title": "1. Easy Registration",
+      "description": "Patients register at reception. The system assigns them 'Waiting' status and a queue position for the selected doctor."
     },
     "step2": {
-      "title": "Informed Waiting & Calling",
-      "description": "Patients see their turn on public displays. Doctors or staff call the next patient, changing their status to 'Calling'."
+      "title": "2. Informed Waiting & Calling",
+      "description": "Patients see their turn on public displays. Doctors call patients, changing status to 'Calling', which is shown on the display."
     },
     "step3": {
-      "title": "Consultation & Completion",
-      "description": "After consultation, the doctor marks status as 'Completed'. Data is logged for analytics, optimizing clinic operations."
+      "title": "3. Consultation & Completion",
+      "description": "After consultation, the doctor marks status 'Completed'. Data is logged for analytics. No-shows/cancellations are also managed."
     }
   },
   "testimonials": {
