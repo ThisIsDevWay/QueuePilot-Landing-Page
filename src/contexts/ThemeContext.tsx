@@ -7,7 +7,6 @@ type Theme = 'light' | 'dark';
 interface ThemeContextType {
   theme: Theme;
   setTheme: (theme: Theme) => void;
-  // toggleTheme: () => void; // Example for later
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -15,22 +14,18 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 const THEME_STORAGE_KEY = 'theme';
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setThemeState] = useState<Theme>('light'); // Default, will be quickly updated
+  const [theme, setThemeState] = useState<Theme>('light'); // Default to light, quickly updated
 
   useEffect(() => {
     const storedTheme = localStorage.getItem(THEME_STORAGE_KEY) as Theme | null;
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const systemPrefersDark = mediaQuery.matches;
-
     let initialTheme: Theme;
+
     if (storedTheme) {
       initialTheme = storedTheme;
     } else {
-      initialTheme = systemPrefersDark ? 'dark' : 'light';
+      initialTheme = 'light'; // Default to light if no theme is in localStorage
     }
     
-    // Update React state and ensure <html> class matches
-    // The inline script handles the very first paint, this syncs React & handles listeners
     setThemeState(initialTheme);
     if (initialTheme === 'dark') {
       document.documentElement.classList.add('dark');
@@ -38,8 +33,9 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
       document.documentElement.classList.remove('dark');
     }
 
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e: MediaQueryListEvent) => {
-      // Only update if no theme is explicitly set in localStorage (i.e., following system)
+      // Only update if no theme is explicitly set in localStorage (i.e., user hasn't manually picked)
       if (!localStorage.getItem(THEME_STORAGE_KEY)) {
         const newSystemTheme = e.matches ? 'dark' : 'light';
         setThemeState(newSystemTheme);

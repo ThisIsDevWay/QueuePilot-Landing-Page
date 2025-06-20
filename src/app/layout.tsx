@@ -52,12 +52,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
 (function() {
-  // Priority: localStorage -> system preference
+  // Priority: localStorage -> default to light
   var theme = localStorage.getItem('theme');
-  if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  if (theme === 'dark') {
     document.documentElement.classList.add('dark');
   } else {
-    // Covers theme === 'light' or (!theme && system is light)
+    // Covers theme === 'light' or theme === null (no theme in localStorage)
     document.documentElement.classList.remove('dark');
   }
 })();
