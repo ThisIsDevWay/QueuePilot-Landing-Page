@@ -16,7 +16,7 @@ export default function PrivacyPolicyContent() {
   }, [locale]);
 
   return (
-    <div className="prose prose-sm sm:prose-base dark:prose-invert max-w-none text-foreground/80">
+    <div className="prose prose-sm sm:prose-base dark:prose-invert max-w-none text-foreground/90">
       <p>{t('privacyPolicy.lastUpdated', { date: displayDate || t('privacyPolicy.loadingDate') })}</p>
 
       <h2 className="font-headline text-primary !text-lg sm:!text-xl !mb-2">{t('privacyPolicy.section1.title')}</h2>

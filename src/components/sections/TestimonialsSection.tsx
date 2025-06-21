@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('testimonials.title')}
           </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/90 max-w-2xl mx-auto">
             {t('testimonials.subtitle')}
           </p>
         </div>
@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
             <Card key={testimonial.id} className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-secondary/20 flex flex-col">
               <CardContent className="p-6 flex-grow flex flex-col">
                 <Quote className="h-8 w-8 text-primary/50 mb-4" />
-                <p className="text-foreground/80 italic mb-6 flex-grow">"{t(testimonial.quoteKey)}"</p>
+                <p className="text-foreground/90 italic mb-6 flex-grow">"{t(testimonial.quoteKey)}"</p>
                 <div className="flex items-center mt-auto">
                   <Avatar className="h-12 w-12 mr-4">
                     <AvatarImage src={testimonial.avatar} alt={t(testimonial.authorKey)} data-ai-hint="person portrait" />

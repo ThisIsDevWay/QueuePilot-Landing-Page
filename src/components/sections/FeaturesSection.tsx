@@ -44,7 +44,7 @@ const FeaturesSection = () => {
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('features.title')}
           </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/90 max-w-2xl mx-auto">
             {t('features.subtitle')}
           </p>
         </div>
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
                   )}
                   <CardTitle className="font-headline text-xl text-primary">{t(feature.titleKey)}</CardTitle>
                 </CardHeader>
-                <CardDescription className="text-base text-justify px-6 pb-6 pt-6 text-foreground/70 flex-grow">
+                <CardDescription className="text-base text-justify px-6 pb-6 pt-6 text-foreground/90 flex-grow">
                   {t(feature.descriptionKey)}
                 </CardDescription>
               </Card>

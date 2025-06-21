@@ -4,6 +4,7 @@ import { useTranslation } from '@/contexts/LocaleContext';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Rocket } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const CTASection = () => {
   const { t } = useTranslation();
@@ -24,9 +25,10 @@ const CTASection = () => {
           variant="secondary" 
           className="bg-background text-primary hover:bg-background/90 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
         >
-          <Link href="mailto:sales@queuepilot.com?subject=QueuePilot Demo Request">
-            {t('cta.button')}
-          </Link>
+          <Link href="/demo">
+                    {t('howItWorks.ctaButton')}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
         </Button>
       </div>
     </section>

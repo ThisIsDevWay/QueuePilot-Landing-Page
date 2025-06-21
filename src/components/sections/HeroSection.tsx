@@ -20,16 +20,10 @@ const HeroSection = () => {
             <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary mb-6">
               {t('hero.title')}
             </h1>
-            <p className="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg md:text-xl text-foreground/90 mb-10 max-w-2xl mx-auto lg:mx-0">
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="#cta">
-                  {t('hero.ctaButton')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
               <Button asChild variant="outline" size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
                 <Link href="#features">
                   {t('hero.secondaryButton')}

@@ -16,7 +16,7 @@ export default function TermsOfServiceContent() {
   }, [locale]);
 
   return (
-    <div className="prose prose-sm sm:prose-base dark:prose-invert max-w-none text-foreground/80">
+    <div className="prose prose-sm sm:prose-base dark:prose-invert max-w-none text-foreground/90">
       <p>{t('termsOfService.lastUpdated', { date: displayDate || t('termsOfService.loadingDate') })}</p>
 
       <h2 className="font-headline text-primary !text-lg sm:!text-xl !mb-2">{t('termsOfService.section1.title')}</h2>

@@ -19,7 +19,7 @@ const HowItWorksSection = () => {
 
   const steps: Step[] = [
     { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', imageHint: 'patient registration', imageUrl: '/howworks/registro.png' },
-    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', imageHint: 'queue display', imageUrl: '/howworks/pantalla-publica.png' },
+    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', imageHint: 'queue display', imageUrl: '/howworks/pantalla-publica.mp4' },
     { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', imageHint: 'doctor consultation', imageUrl: '/howworks/consulta.png' },
   ];
 
@@ -30,7 +30,7 @@ const HowItWorksSection = () => {
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('howItWorks.title')}
           </h2>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg text-foreground/90 max-w-3xl mx-auto">
             {t('howItWorks.subtitle')}
           </p>
         </div>
@@ -39,20 +39,33 @@ const HowItWorksSection = () => {
           {steps.map((step, index) => (
             <div key={step.id} className="grid lg:grid-cols-2 gap-12 items-center">
               <div className={`relative aspect-video max-w-xl mx-auto lg:max-w-none lg:mx-0 rounded-xl shadow-2xl overflow-hidden group ${index % 2 !== 0 ? 'lg:order-last' : ''}`}>
-                <Image
-                  src={step.imageUrl}
-                  alt={t(step.titleKey)}
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
-                  data-ai-hint={step.imageHint}
-                />
+                {step.imageUrl.endsWith('.mp4') ? (
+                  <video
+                    src={step.imageUrl}
+                    width={800}
+                    height={600}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <Image
+                    src={step.imageUrl}
+                    alt={t(step.titleKey)}
+                    width={800}
+                    height={600}
+                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-500"
+                    data-ai-hint={step.imageHint}
+                  />
+                )}
                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
               </div>
               
               <div className="text-center lg:text-left">
                 <h3 className="font-headline text-2xl md:text-3xl font-bold text-primary mb-4">{t(step.titleKey)}</h3>
-                <p className="text-foreground/80 mb-8">{t(step.descriptionKey)}</p>
+                <p className="text-foreground/90 mb-8">{t(step.descriptionKey)}</p>
                 <Button asChild size="lg">
                   <Link href="/demo">
                     {t('howItWorks.ctaButton')}
