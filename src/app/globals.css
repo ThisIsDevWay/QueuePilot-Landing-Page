@@ -20,8 +20,8 @@ body {
     --secondary-foreground: 225 10% 20%;
     --muted: 210 40% 90%; /* Light Gray */
     --muted-foreground: 225 10% 45%;
-    --accent: 225 73% 65%; /* Slightly lighter Royal Blue */
-    --accent-foreground: 0 0% 100%;
+    --accent: 217 96% 81%; /* Soft blue accent, inspired by #A1C4FD */
+    --accent-foreground: 225 10% 20%; /* Dark text on light accent */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 210 40% 85%;
@@ -39,8 +39,8 @@ body {
     --sidebar-foreground: 225 10% 20%;
     --sidebar-primary: 225 73% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 225 73% 65%;
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-accent: 217 96% 81%;
+    --sidebar-accent-foreground: 225 10% 20%;
     --sidebar-border: 210 40% 85%;
     --sidebar-ring: 225 73% 60%;
   }
@@ -57,8 +57,8 @@ body {
     --secondary-foreground: 208 100% 90%;
     --muted: 225 10% 20%;
     --muted-foreground: 208 100% 65%;
-    --accent: 225 73% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 217 90% 60%; /* Darker accent for dark mode */
+    --accent-foreground: 208 100% 95%; /* Light text on dark accent */
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 225 10% 25%;
@@ -75,8 +75,8 @@ body {
     --sidebar-foreground: 208 100% 90%;
     --sidebar-primary: 225 73% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 225 73% 65%;
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-accent: 217 90% 60%;
+    --sidebar-accent-foreground: 208 100% 95%;
     --sidebar-border: 225 10% 25%;
     --sidebar-ring: 225 73% 60%;
   }
