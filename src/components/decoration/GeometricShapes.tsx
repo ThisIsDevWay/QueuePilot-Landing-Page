@@ -69,9 +69,9 @@ interface GeometricShapesProps {
 }
 
 export const GeometricShapes = ({ variant, className }: GeometricShapesProps) => {
-  // Use theme colors with opacity for subtlety. Adapts to light/dark mode.
-  const baseColor = "text-foreground/10 dark:text-foreground/10";
-  const accentColor = "text-primary/15 dark:text-primary/15";
+  // Use high-contrast colors with opacity. Black for light theme, White for dark theme.
+  const baseColor = "text-black/10 dark:text-white/10";
+  const accentColor = "text-primary/15 dark:text-primary/10";
 
   const renderShapes = () => {
     switch (variant) {
@@ -97,6 +97,7 @@ export const GeometricShapes = ({ variant, className }: GeometricShapesProps) =>
           </>
         );
       case 'cta':
+        // This section has a dark gradient background, so white shapes are always appropriate.
         return (
           <>
             <Triangle className={cn("text-white/10", "absolute top-0 right-0 w-80 h-80 transform translate-x-1/3 -translate-y-1/3 rotate-45")} />
