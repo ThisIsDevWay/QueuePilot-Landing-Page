@@ -3,7 +3,7 @@
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Tv2, Icon as LucideIcon } from 'lucide-react';
+import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Tv2, Zap, Icon as LucideIcon } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 import React from 'react';
 
@@ -18,9 +18,10 @@ const iconComponents: { [key: string]: React.FC<LucideProps> } = {
   TrendingUp,
   Smile,
   LayoutGrid,
+  Tv2,
   BarChart2,
   Languages,
-  Tv2,
+  Zap,
 };
 
 const FeaturesSection = () => {
@@ -33,6 +34,7 @@ const FeaturesSection = () => {
     { id: 'feature4', titleKey: 'features.feature4.title', descriptionKey: 'features.feature4.description', iconName: 'Tv2' },
     { id: 'feature5', titleKey: 'features.feature5.title', descriptionKey: 'features.feature5.description', iconName: 'BarChart2' },
     { id: 'feature6', titleKey: 'features.feature6.title', descriptionKey: 'features.feature6.description', iconName: 'Languages' },
+    { id: 'feature7', titleKey: 'features.feature7.title', descriptionKey: 'features.feature7.description', iconName: 'Zap' },
   ];
 
   return (
@@ -60,7 +62,7 @@ const FeaturesSection = () => {
                   )}
                   <CardTitle className="font-headline text-xl text-primary">{t(feature.titleKey)}</CardTitle>
                 </CardHeader>
-                <CardDescription className="text-justify px-6 pb-6 text-foreground/70 flex-grow">
+                <CardDescription className="text-base text-justify px-6 pb-6 pt-6 text-foreground/70 flex-grow">
                   {t(feature.descriptionKey)}
                 </CardDescription>
               </Card>

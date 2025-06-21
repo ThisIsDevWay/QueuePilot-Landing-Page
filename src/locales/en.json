@@ -39,6 +39,10 @@
     "feature6": {
       "title": "Multilingual Support",
       "description": "Available in Spanish (default) and English, facilitating adoption in diverse environments and improving communication."
+    },
+    "feature7": {
+      "title": "Lightning-Fast Sync",
+      "description": "All events, from patient calls to status updates, are synchronized in real-time across all devices, ensuring instant communication."
     }
   },
   "howItWorks": {
@@ -64,7 +68,7 @@
     "button": "Get Started Today"
   },
   "footer": {
-    "description": "Revolutionizing queue management for businesses worldwide.",
+    "description": "Revolutionizing queue management for businesses.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "email": "support@queuepilot.com",

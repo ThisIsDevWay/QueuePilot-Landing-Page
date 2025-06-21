@@ -39,6 +39,10 @@
     "feature6": {
       "title": "Soporte Multilingüe Integrado",
       "description": "Disponible en Español (por defecto) e Inglés, facilitando su adopción en entornos diversos y mejorando la comunicación."
+    },
+    "feature7": {
+      "title": "Sincronización Ultrarrápida",
+      "description": "Todos los eventos, desde llamadas a pacientes hasta cambios de estado, se sincronizan en tiempo real en todos los dispositivos, garantizando una comunicación instantánea."
     }
   },
   "howItWorks": {
@@ -64,8 +68,8 @@
     "button": "Comienza Hoy Mismo"
   },
   "footer": {
-    "description": "Revolucionando la gestión de colas para empresas de todo el mundo.",
-    "quickLinks": "Enlaces Rápidos",
+    "description": "Revolucionando la gestión de colas para empresas.",
+    "quickLinks": "Quick Links",
     "contactUs": "Contáctanos",
     "email": "queuepilot.app@gmail.com",
     "phone": "+58(424)6302323",
