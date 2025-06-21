@@ -60,7 +60,7 @@ const FeaturesSection = () => {
                   )}
                   <CardTitle className="font-headline text-xl text-primary">{t(feature.titleKey)}</CardTitle>
                 </CardHeader>
-                <CardDescription className="text-center px-6 pb-6 text-foreground/70 flex-grow">
+                <CardDescription className="text-justify px-6 pb-6 text-foreground/70 flex-grow">
                   {t(feature.descriptionKey)}
                 </CardDescription>
               </Card>
