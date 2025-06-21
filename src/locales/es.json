@@ -5,10 +5,7 @@
     "home": "Inicio",
     "features": "Características",
     "howItWorks": "Cómo Funciona",
-    "cta": "Prueba una Demo",
-    "language": "Idioma",
-    "english": "Inglés",
-    "spanish": "Español"
+    "cta": "Prueba una Demo"
   },
   "hero": {
     "title": "Gestiona Tus Colas Sin Esfuerzo con QueuePilot",
@@ -32,10 +29,14 @@
       "description": "Desde el registro de pacientes hasta la administración de médicos, especialidades, consultorios y publicidad, todo en una plataforma."
     },
     "feature4": {
+      "title": "Publicidad Integrada",
+      "description": "El 40% del espacio de la pantalla se dedica a publicidad para que los clientes estén informados de los servicios y productos de la empresa."
+    },
+    "feature5": {
       "title": "Información Clave a Través de Reportes",
       "description": "Accede a reportes y estadísticas detalladas sobre rendimiento, tiempos de espera y ocupación para tomar decisiones informadas y optimizar servicios."
     },
-    "feature5": {
+    "feature6": {
       "title": "Soporte Multilingüe Integrado",
       "description": "Disponible en Español (por defecto) e Inglés, facilitando su adopción en entornos diversos y mejorando la comunicación."
     }

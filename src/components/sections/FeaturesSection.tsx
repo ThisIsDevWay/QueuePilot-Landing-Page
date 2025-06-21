@@ -3,7 +3,7 @@
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Icon as LucideIcon } from 'lucide-react';
+import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Tv2, Icon as LucideIcon } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 import React from 'react';
 
@@ -20,6 +20,7 @@ const iconComponents: { [key: string]: React.FC<LucideProps> } = {
   LayoutGrid,
   BarChart2,
   Languages,
+  Tv2,
 };
 
 const FeaturesSection = () => {
@@ -29,8 +30,9 @@ const FeaturesSection = () => {
     { id: 'feature1', titleKey: 'features.feature1.title', descriptionKey: 'features.feature1.description', iconName: 'TrendingUp' },
     { id: 'feature2', titleKey: 'features.feature2.title', descriptionKey: 'features.feature2.description', iconName: 'Smile' },
     { id: 'feature3', titleKey: 'features.feature3.title', descriptionKey: 'features.feature3.description', iconName: 'LayoutGrid' },
-    { id: 'feature4', titleKey: 'features.feature4.title', descriptionKey: 'features.feature4.description', iconName: 'BarChart2' },
-    { id: 'feature5', titleKey: 'features.feature5.title', descriptionKey: 'features.feature5.description', iconName: 'Languages' },
+    { id: 'feature4', titleKey: 'features.feature4.title', descriptionKey: 'features.feature4.description', iconName: 'Tv2' },
+    { id: 'feature5', titleKey: 'features.feature5.title', descriptionKey: 'features.feature5.description', iconName: 'BarChart2' },
+    { id: 'feature6', titleKey: 'features.feature6.title', descriptionKey: 'features.feature6.description', iconName: 'Languages' },
   ];
 
   return (

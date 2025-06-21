@@ -5,10 +5,7 @@
     "home": "Home",
     "features": "Features",
     "howItWorks": "How It Works",
-    "cta": "Get Started",
-    "language": "Language",
-    "english": "English",
-    "spanish": "Spanish"
+    "cta": "Get Started"
   },
   "hero": {
     "title": "Manage Your Queues Effortlessly with QueuePilot",
@@ -32,10 +29,14 @@
       "description": "From patient registration to managing doctors, specialties, offices, and public display ads—all key clinic operations in one platform."
     },
     "feature4": {
+      "title": "Integrated Advertising",
+      "description": "40% of the screen space is dedicated to advertising, keeping customers informed about the company's services and products."
+    },
+    "feature5": {
       "title": "Insightful Reporting",
       "description": "Access detailed reports and statistics on clinic performance, wait times, and occupancy by doctor/specialty to make informed decisions."
     },
-    "feature5": {
+    "feature6": {
       "title": "Multilingual Support",
       "description": "Available in Spanish (default) and English, facilitating adoption in diverse environments and improving communication."
     }
@@ -90,7 +91,7 @@
     },
     "section3": {
       "title": "3. How We Use Your Information",
-      "paragraph1": "We use personal information collected via our Services for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.",
+      "paragraph1": "We use personal information collected via our Services for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our our legal obligations.",
       "listItem1": "To facilitate account creation and logon process.",
       "listItem2": "To post testimonials.",
       "listItem3": "Request feedback.",
