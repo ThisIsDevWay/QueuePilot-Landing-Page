@@ -3,6 +3,7 @@
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { TrendingUp, Smile, LayoutGrid, BarChart2, Languages, Tv2, Zap, Icon as LucideIcon } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 import React from 'react';
@@ -53,7 +54,12 @@ const FeaturesSection = () => {
           {features.map((feature) => {
             const IconComponent = iconComponents[feature.iconName] as React.FC<LucideProps> | undefined;
             return (
-              <Card key={feature.id} className="shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <Card key={feature.id} className="relative shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                {feature.id === 'feature5' && (
+                  <Badge variant="secondary" className="absolute top-4 right-4 bg-accent text-accent-foreground">
+                    {t('features.soon')}
+                  </Badge>
+                )}
                 <CardHeader className="items-center text-center p-6">
                   {IconComponent && (
                     <div className="p-3 bg-primary/10 rounded-full mb-4 inline-block">
