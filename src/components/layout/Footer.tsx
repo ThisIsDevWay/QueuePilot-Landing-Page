@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -15,8 +14,8 @@ import {
   DialogClose
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import PrivacyPolicyContent from '@/app/privacy-policy/page';
-import TermsOfServiceContent from '@/app/terms-of-service/page';
+import PrivacyPolicyContent from '@/components/legal/PrivacyPolicyContent';
+import TermsOfServiceContent from '@/components/legal/TermsOfServiceContent';
 
 const Footer = () => {
   const { t } = useTranslation();
