@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -17,11 +18,9 @@ import { Button } from "@/components/ui/button";
 import PrivacyPolicyContent from '@/components/legal/PrivacyPolicyContent';
 import TermsOfServiceContent from '@/components/legal/TermsOfServiceContent';
 import Image from 'next/image';
-import { useTheme } from '@/contexts/ThemeContext';
 
 const Footer = () => {
   const { t } = useTranslation();
-  const { theme } = useTheme();
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   const [isMounted, setIsMounted] = useState(false);
 
@@ -57,11 +56,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary mb-4" aria-label={t('appName')}>
-              {theme === 'dark' ? (
-                <Image src="/hero/logo-white.png" alt={t('appName')} width={28} height={28} />
-              ) : (
-                <Image src="/hero/logo-blue.png" alt={t('appName')} width={28} height={28} />
-              )}
+              <Image src="/hero/logo-blue.png" alt={t('appName')} width={28} height={28} />
               <span className="font-headline">{t('appName')}</span>
             </Link>
             <p className="text-sm text-secondary-foreground/80">
