@@ -57,9 +57,12 @@ export const LocaleProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const t = (key: string, options?: { [key: string]: string | number }): string => {
-    // Always return key if not mounted on client yet to avoid hydration issues if server rendered with a different default
-    // The actual translation will occur once isMounted is true.
-    if (!isMounted && typeof window === 'undefined') return key; // SSR case or pre-hydration
+    // On the first render (server-side and initial client-side), we return the key
+    // to prevent a hydration mismatch. The actual translation will render
+    // after the component has mounted on the client.
+    if (!isMounted) {
+      return key;
+    }
     
     const currentTranslations = allTranslations[locale] || allTranslations['en'];
     const fallbackTranslations = allTranslations['en'];
