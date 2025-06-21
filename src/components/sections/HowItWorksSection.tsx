@@ -11,15 +11,16 @@ interface Step {
   titleKey: string;
   descriptionKey: string;
   imageHint: string;
+  imageUrl: string;
 }
 
 const HowItWorksSection = () => {
   const { t } = useTranslation();
 
   const steps: Step[] = [
-    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', imageHint: 'patient registration' },
-    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', imageHint: 'queue display' },
-    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', imageHint: 'doctor consultation' },
+    { id: 'step1', titleKey: 'howItWorks.step1.title', descriptionKey: 'howItWorks.step1.description', imageHint: 'patient registration', imageUrl: '/howworks/registro.png' },
+    { id: 'step2', titleKey: 'howItWorks.step2.title', descriptionKey: 'howItWorks.step2.description', imageHint: 'queue display', imageUrl: '/howworks/pantalla-publica.png' },
+    { id: 'step3', titleKey: 'howItWorks.step3.title', descriptionKey: 'howItWorks.step3.description', imageHint: 'doctor consultation', imageUrl: '/howworks/consulta.png' },
   ];
 
   return (
@@ -39,7 +40,7 @@ const HowItWorksSection = () => {
             <div key={step.id} className="grid lg:grid-cols-2 gap-12 items-center">
               <div className={`relative aspect-video max-w-xl mx-auto lg:max-w-none lg:mx-0 rounded-xl shadow-2xl overflow-hidden group ${index % 2 !== 0 ? 'lg:order-last' : ''}`}>
                 <Image
-                  src="https://placehold.co/800x600.png"
+                  src={step.imageUrl}
                   alt={t(step.titleKey)}
                   width={800}
                   height={600}
