@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useTranslation } from '@/contexts/LocaleContext';
@@ -5,15 +6,14 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import { GeometricShapes } from '../decoration/GeometricShapes';
 
 const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
     <section id="home" className="relative bg-gradient-to-b from-background to-secondary/30 py-20 md:py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        {/* Subtle background pattern or graphic if desired */}
-      </div>
+      <GeometricShapes variant="hero" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">

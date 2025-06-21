@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useTranslation } from '@/contexts/LocaleContext';
@@ -5,13 +6,15 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { GeometricShapes } from '../decoration/GeometricShapes';
 
 const CTASection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="cta" className="py-16 md:py-24 bg-gradient-to-r from-primary to-accent">
-      <div className="container mx-auto px-4 md:px-6 text-center">
+    <section id="cta" className="relative py-16 md:py-24 bg-gradient-to-r from-primary to-accent overflow-hidden">
+      <GeometricShapes variant="cta" />
+      <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
         <Image src="/hero/logo-white.png" alt={t('appName')} width={64} height={64} className="mx-auto mb-6 opacity-80" />
         <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
           {t('cta.title')}
