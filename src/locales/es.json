@@ -15,18 +15,18 @@
   },
   "features": {
     "title": "Razones Clave para Elegir QueuePilot",
-    "subtitle": "Descubre las potentes características que hacen de QueuePilot la mejor opción para tu clínica o negocio.",
+    "subtitle": "Descubre las potentes características que hacen de QueuePilot la mejor opción para tu clínica, consultorio o negocio.",
     "feature1": {
-      "title": "Optimización del Flujo de Pacientes",
+      "title": "Optimización del Flujo de Clientes/Pacientes",
       "description": "Reduce drásticamente los tiempos de espera y mejora la eficiencia operativa general con visibilidad en tiempo real para una gestión proactiva del flujo."
     },
     "feature2": {
       "title": "Experiencia Mejorada para Todos",
-      "description": "Interfaz intuitiva para personal y médicos, y pantalla pública que mantiene informados a los pacientes, reduciendo la ansiedad y mejorando su experiencia."
+      "description": "Interfaz intuitiva para personal y médicos, y pantalla pública que mantiene informados a los Clientes/Pacientes, reduciendo la ansiedad y mejorando su experiencia."
     },
     "feature3": {
       "title": "Gestión Integral y Centralizada",
-      "description": "Desde el registro de pacientes hasta la administración de médicos, especialidades, consultorios y publicidad, todo en una plataforma."
+      "description": "Desde el registro de Clientes/Pacientes hasta la administración de médicos, especialidades, consultorios y publicidad, todo en una plataforma."
     },
     "feature4": {
       "title": "Publicidad Integrada",
@@ -42,7 +42,7 @@
     },
     "feature7": {
       "title": "Sincronización Ultrarrápida",
-      "description": "Todos los eventos, desde llamadas a pacientes hasta cambios de estado, se sincronizan en tiempo real en todos los dispositivos, garantizando una comunicación instantánea."
+      "description": "Todos los eventos, desde llamadas a Clientes/Pacientes hasta cambios de estado, se sincronizan en tiempo real en todos los dispositivos, garantizando una comunicación instantánea."
     }
   },
   "howItWorks": {
@@ -50,11 +50,11 @@
     "subtitle": "Observa cómo QueuePilot gestiona el recorrido del paciente de principio a fin.",
     "step1": {
       "title": "1. Registro Fácil",
-      "description": "Los pacientes se registran en recepción. El sistema asigna un estado de 'En Espera' y una posición en la cola del médico seleccionado."
+      "description": "Los Clientes/Pacientes se registran en recepción. El sistema asigna un estado de 'En Espera' y una posición en la cola del médico seleccionado."
     },
     "step2": {
       "title": "2. Espera Informada y Llamada",
-      "description": "Los pacientes ven su turno en pantallas públicas. Los médicos llaman a los pacientes cambiando su estado a 'Llamando', lo cual se refleja en la pantalla."
+      "description": "Los Clientes/Pacientes ven su turno en pantallas públicas. Los médicos llaman a los Clientes/Pacientes cambiando su estado a 'Llamando', lo cual se refleja en la pantalla."
     },
     "step3": {
       "title": "3. Consulta y Finalización",
