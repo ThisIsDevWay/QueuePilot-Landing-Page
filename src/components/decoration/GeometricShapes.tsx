@@ -84,8 +84,10 @@ export const GeometricShapes = ({ variant, className }: GeometricShapesProps) =>
       case 'features':
         return (
           <>
+            <Triangle className={cn(baseColor, "absolute -top-20 -left-20 w-64 h-64 transform rotate-[-30deg]")} />
             <Plus className={cn(accentColor, "absolute -top-10 -right-10 w-48 h-48 transform rotate-45")} />
-            <Wiggle className={cn(baseColor, "absolute bottom-10 left-0 w-96 h-96 transform -rotate-12")} />
+            <Wiggle className={cn(baseColor, "absolute bottom-10 -left-10 w-96 h-96 transform -rotate-12")} />
+            <Square className={cn(accentColor, "absolute -bottom-20 -right-20 w-72 h-72 transform rotate-[25deg]")} />
           </>
         );
       case 'how-it-works':
