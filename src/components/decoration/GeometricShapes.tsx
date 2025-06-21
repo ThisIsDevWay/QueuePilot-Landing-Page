@@ -70,8 +70,8 @@ interface GeometricShapesProps {
 
 export const GeometricShapes = ({ variant, className }: GeometricShapesProps) => {
   // Use theme colors with opacity for subtlety. Adapts to light/dark mode.
-  const baseColor = "text-foreground/5 dark:text-foreground/10";
-  const accentColor = "text-primary/10 dark:text-primary/15";
+  const baseColor = "text-foreground/10 dark:text-foreground/10";
+  const accentColor = "text-primary/15 dark:text-primary/15";
 
   const renderShapes = () => {
     switch (variant) {
