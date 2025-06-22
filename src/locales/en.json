@@ -5,7 +5,9 @@
     "home": "Home",
     "features": "Features",
     "howItWorks": "How It Works",
-    "cta": "Get Started"
+    "cta": "Get Started",
+    "spanish": "Spanish",
+    "english": "English"
   },
   "hero": {
     "title": "Manage Your Queues Effortlessly with QueuePilot",

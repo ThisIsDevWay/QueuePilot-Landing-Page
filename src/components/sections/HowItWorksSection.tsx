@@ -3,9 +3,6 @@
 
 import { useTranslation } from '@/contexts/LocaleContext';
 import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 import { GeometricShapes } from '../decoration/GeometricShapes';
 
 interface Step {
@@ -69,12 +66,6 @@ const HowItWorksSection = () => {
               <div className="text-center lg:text-left">
                 <h3 className="font-headline text-2xl md:text-3xl font-bold text-primary mb-4">{t(step.titleKey)}</h3>
                 <p className="text-foreground/90 mb-8">{t(step.descriptionKey)}</p>
-                <Button asChild size="lg">
-                  <Link href="/demo">
-                    {t('howItWorks.ctaButton')}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
               </div>
             </div>
           ))}

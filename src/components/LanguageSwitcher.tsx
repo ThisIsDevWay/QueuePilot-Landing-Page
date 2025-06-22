@@ -23,18 +23,18 @@ const LanguageSwitcher = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          onClick={() => setLocale('en')}
-          disabled={locale === 'en'}
-          aria-current={locale === 'en' ? 'page' : undefined}
-        >
-          {t('navbar.english')}
-        </DropdownMenuItem>
-        <DropdownMenuItem
           onClick={() => setLocale('es')}
           disabled={locale === 'es'}
           aria-current={locale === 'es' ? 'page' : undefined}
         >
           {t('navbar.spanish')}
+        </DropdownMenuItem>
+        <DropdownMenuItem
+          onClick={() => setLocale('en')}
+          disabled={locale === 'en'}
+          aria-current={locale === 'en' ? 'page' : undefined}
+        >
+          {t('navbar.english')}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

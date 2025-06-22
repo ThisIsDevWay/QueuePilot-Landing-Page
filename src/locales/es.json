@@ -5,7 +5,9 @@
     "home": "Inicio",
     "features": "Características",
     "howItWorks": "Cómo Funciona",
-    "cta": "Prueba una Demo"
+    "cta": "Prueba una Demo",
+    "spanish": "Español",
+    "english": "Ingles"
   },
   "hero": {
     "title": "Gestiona Tus Colas Sin Esfuerzo con QueuePilot",

@@ -24,12 +24,6 @@ const HeroSection = () => {
               {t('hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
-                <Link href="/demo">
-                  {t('hero.ctaButton')}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
               <Button asChild variant="outline" size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
                 <Link href="#features">
                   {t('hero.secondaryButton')}

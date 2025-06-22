@@ -28,7 +28,7 @@ const CTASection = () => {
           variant="secondary" 
           className="bg-background text-primary hover:bg-background/90 shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
         >
-          <Link href="/demo">
+          <Link href="http://38.171.255.120:3000" target="_blank" rel="noopener noreferrer">
                     {t('howItWorks.ctaButton')}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
