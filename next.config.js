@@ -1,11 +1,6 @@
-import type {NextConfig} from 'next';
-
-const repositoryName = 'QueuePilot-Landing-Page';
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   /* config options here */
-  output: 'export',
-  basePath: `/${repositoryName}`,
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -13,8 +8,15 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
