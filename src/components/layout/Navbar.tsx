@@ -83,7 +83,7 @@ const Navbar = () => {
           <LanguageSwitcher />
           <ThemeSwitcher />
           <Button asChild className="hidden md:inline-flex">
-            <Link href="http://38.171.255.120:3000" target="_blank" rel="noopener noreferrer">{t('navbar.cta')}</Link>
+            <Link href="http://38.171.255.120:3002" target="_blank" rel="noopener noreferrer">{t('navbar.cta')}</Link>
           </Button>
           <div className="md:hidden">
             <Sheet>
@@ -108,7 +108,7 @@ const Navbar = () => {
                     )
                   })}
                   <Button asChild className="w-full">
-                    <Link href="http://38.171.255.120:3000" target="_blank" rel="noopener noreferrer">{t('navbar.cta')}</Link>
+                    <Link href="http://38.171.255.120:3002" target="_blank" rel="noopener noreferrer">{t('navbar.cta')}</Link>
                   </Button>
                 </div>
               </SheetContent>
